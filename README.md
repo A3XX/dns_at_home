@@ -7,7 +7,7 @@
 ![pi1](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/1.PNG)
 3. Click on 
 4. Select the micro SD card 
-(https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/2.PNG)
+![pi2](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/2.PNG)
 
 
 
