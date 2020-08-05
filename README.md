@@ -1,3 +1,18 @@
+
+
+### Step 1: Get the Raspberry Pi OS onto microSD card
+
+1. Download Raspberry Pi Imager from https://www.raspberrypi.org/downloads/ 
+2. install and launch Raspberry Pi Imager 
+![pi1](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/1.PNG)
+3. Click on 
+4. Select the micro SD card 
+(https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/2.PNG)
+
+
+
+
+
 ---
 layout: default
 ---
@@ -9,15 +24,6 @@ Text can be **bold**, _italic_, or ~~strikethrough~~.
 There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-### Step 1: Get the Raspberry Pi OS onto microSD card
-
-1. Download Raspberry Pi Imager from https://www.raspberrypi.org/downloads/ 
-2. install and launch Raspberry Pi Imager 
-![pi1](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/1.PNG)
-
-
-
 
 ## Header 2
 
