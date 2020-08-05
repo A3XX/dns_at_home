@@ -2,7 +2,7 @@
 
 ### Step 1: Get the Raspberry Pi OS onto microSD card
 
-1. Download Raspberry Pi Imager from [https://www.raspberrypi.org/downloads/](./https://www.raspberrypi.org/downloads/)
+1. Download Raspberry Pi Imager from [https://www.raspberrypi.org/downloads/](https://www.raspberrypi.org/downloads/)
 
 2. install and launch Raspberry Pi Imager 
 
