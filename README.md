@@ -1,4 +1,3 @@
-Hello Word
 ---
 layout: default
 ---
@@ -11,9 +10,14 @@ There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
-# Header 1
+### Step 1: Get the Raspberry Pi OS onto microSD card
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+1. Download Raspberry Pi Imager from https://www.raspberrypi.org/downloads/ 
+2. install and launch Raspberry Pi Imager 
+![pi1](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/1.PNG)
+
+
+
 
 ## Header 2
 
@@ -95,7 +99,7 @@ end
 
 ### Small image
 
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+![Pi1](https://github.githubassets.com/images/icons/emoji/octocat.png)
 
 ### Large image
 
