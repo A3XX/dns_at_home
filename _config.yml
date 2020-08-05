@@ -1,1 +1,3 @@
 theme: jekyll-theme-slate
+title: [DNS @ Home]
+description: [How to configure Pi-Hole to work with DNS over HTTPS on Raspberry Pi.]
