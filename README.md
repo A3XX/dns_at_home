@@ -48,7 +48,6 @@
 4. We will do most of our configurations using a handy tool called “raspi-config”.
 ```bash
 sudo raspi-config
-}
 ```
 
 
