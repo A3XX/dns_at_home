@@ -156,10 +156,34 @@ Now test that it is working! Run the following dig command
 dig @127.0.0.1 -p 5053 google.com
 
 ```
-### Configuring Pi-hole¶
+### Configuring Pi-hole
 Finally, configure Pi-hole to use the local cloudflared service as the upstream DNS server by specifying 127.0.0.1#5053 as the Custom DNS (IPv4):
 Make sure all other Upstream DNS Servers are unchecked **don't forget to hit Return or click on Save**
 
 ![pic10](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/10.PNG)
+
+
+
+## Step 5:Chnage DNS on your router
+Everyone has different router at home so you will need to consult manual of router to change the DNS server. [This link](https://www.lifewire.com/how-to-change-dns-servers-on-most-popular-routers-2617995) has information on most of the widely routers on how to change the DNS. 
+
+### Manually Update DNS on iPhone 
+How to change DNS settings on iPhone, iPad, or iPod touch:
+1. On your iOS device, open Settings.
+2. Tap Wi-Fi.
+3. Tap the i icon next to the Wi-Fi network you want to change DNS servers for.
+4. Tap DNS.
+5. Now remove the existing DNS servers and enter the IP address of raspberry PI.
+
+### Manually Update DNS on Windows
+
+Please follow this [guide](https://www.quad9.net/microsoft/) and only enter the IP address of raspberry PI.
+
+### Manually Update DNS on Windows
+
+Please follow this [guide](https://www.quad9.net/apple/) and only enter the IP address of raspberry PI.
+
+
+
 
 
