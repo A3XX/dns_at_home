@@ -146,11 +146,11 @@ If you do not want to change the DNS on the router, you can change the DNS serve
 
 #### Manually Update DNS on iPhone 
 How to change DNS settings on iPhone, iPad, or iPod touch:
-- 1. On your iOS device, open Settings.
-- 2. Tap Wi-Fi.
-- 3. Tap the i icon next to the Wi-Fi network you want to change DNS servers for.
-- 4. Tap DNS.
-- 5. Now remove the existing DNS servers and enter the IP address of raspberry PI.
+   1. On your iOS device, open Settings.
+   2. Tap Wi-Fi.
+   3. Tap the i icon next to the Wi-Fi network you want to change DNS servers for.
+   4. Tap DNS.
+   5. Now remove the existing DNS servers and enter the IP address of raspberry PI.
 
 #### Manually Update DNS on Windows
 
