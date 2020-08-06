@@ -1,4 +1,4 @@
-theme: jekyll-theme-hacker
+theme: jekyll-theme-modernist
 title: [DNS @ Home]
 description: [How to configure Pi-Hole to work with DoH (DNS over HTTPS) on Raspberry Pi.]
 show_downloads: false
