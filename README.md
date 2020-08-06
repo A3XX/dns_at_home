@@ -88,6 +88,64 @@ Follow the prompts to complete setup. However make sure to save the password fro
 
 ![pic8](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/8.gif)
 
+Let's change the Pi-hole's default password to something that we can remember.Ignore this step if you don't want to use it. 
+
+```bash 
+pihole -a -p
+```
+
+Open browser and enter the following in browser http://YOUR_IP_ADDRESS/admin/ and enter the password. 
+
+![pic9](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/9.PNG)
+
+
+## Step 4:Installing cloudflared
+Here we are downloading the precompiled binary and copying it to the /usr/local/bin/ directory to allow execution by the cloudflared user. Proceed to run the binary with the -v flag to check it is all working:
+
+```bash 
+wget https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-linux-arm.tgz
+tar -xvzf cloudflared-stable-linux-arm.tgz
+sudo cp ./cloudflared /usr/local/bin
+sudo chmod +x /usr/local/bin/cloudflared
+cloudflared -v
+
+```
+
+Configuring cloudflared to run on startup. roceed to create a configuration file for cloudflared in /etc/cloudflared named config.yml:
+```bash
+sudo mkdir /etc/cloudflared/
+sudo nano /etc/cloudflared/config.yml
+```
+Copy the 1 of the following configuration:
+
+##### Unfiltered DNS
+```bash
+proxy-dns: true
+proxy-dns-port: 5053
+proxy-dns-upstream:
+  - https://1.1.1.1/dns-query
+  - https://1.0.0.1/dns-query
+```
+##### if you want to Block Malware
+```bash
+proxy-dns: true
+proxy-dns-port: 5053
+proxy-dns-upstream:
+  - https://security.cloudflare-dns.com/dns-query
+```
+##### Block Malware and Adult Content
+```bash
+proxy-dns: true
+proxy-dns-port: 5053
+proxy-dns-upstream:
+  - https://family.cloudflare-dns.com/dns-query
+```
+
+
+
+
+
+
 
 
 
