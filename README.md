@@ -95,7 +95,7 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
    ```
 3. Selcct and Copy 1 of the 3 configuration options. 
 
-     ##### a. Unfiltered DNS
+      - ##### a. Unfiltered DNS
      ```bash
      proxy-dns: true
      proxy-dns-port: 5053
