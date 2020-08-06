@@ -72,6 +72,7 @@ sudo nano /etc/dhcpcd.conf
   static routers=192.168.1.1
   static domain_name_servers=192.168.1.1
 ``` 
+
 - f.  save the changes by pressing ctrl + x keys, then press y and enter. then enter *sudo reboot*
 
 - g. Open a new SSH connection using static IP we just assigned.
@@ -87,9 +88,7 @@ sudo nano /etc/dhcpcd.conf
 
 
 
----
-layout: default
----
+
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
