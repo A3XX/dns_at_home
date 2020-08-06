@@ -116,7 +116,7 @@ Configuring cloudflared to run on startup. roceed to create a configuration file
 sudo mkdir /etc/cloudflared/
 sudo nano /etc/cloudflared/config.yml
 ```
-Copy the 1 of the following configuration:
+### Copy the 1 of the following configuration 
 
 ##### Unfiltered DNS
 ```bash
@@ -126,14 +126,14 @@ proxy-dns-upstream:
   - https://1.1.1.1/dns-query
   - https://1.0.0.1/dns-query
 ```
-##### if you want to Block Malware
+#### if you want to Block Malware
 ```bash
 proxy-dns: true
 proxy-dns-port: 5053
 proxy-dns-upstream:
   - https://security.cloudflare-dns.com/dns-query
 ```
-##### Block Malware and Adult Content
+#### Block Malware and Adult Content
 ```bash
 proxy-dns: true
 proxy-dns-port: 5053
@@ -141,132 +141,25 @@ proxy-dns-upstream:
   - https://family.cloudflare-dns.com/dns-query
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Text can be **bold**, _italic_, or ~~strikethrough~~.
-
-[Link to another page](./another-page.html).
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
+Now install the service via cloudflared's service command:
+```bash
+sudo cloudflared service install
 ```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
+Start the systemd service and check its status:
+```bash
+sudo systemctl start cloudflared
+sudo systemctl status cloudflared
+sudo cloudflared service install
 ```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Pi1](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
+Now test that it is working! Run the following dig command
+```bash
+dig @127.0.0.1 -p 5053 google.com
 
 ```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
+### Configuring Pi-hole¶
+Finally, configure Pi-hole to use the local cloudflared service as the upstream DNS server by specifying 127.0.0.1#5053 as the Custom DNS (IPv4):
+Make sure all other Upstream DNS Servers are unchecked **don't forget to hit Return or click on Save**
 
-```
-The final element.
-```
+![pic10](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/10.PNG)
+
+
