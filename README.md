@@ -24,7 +24,7 @@
 
 ![pi4](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/4.PNG)
 
-7. Once completeed disconect the microSD card and reconnect. create a blank **SSH** wihout any extension. No .txt only SSH.
+7. Once completeed disconect the microSD card and reconnect. create a blank **SSH** wihout any extension on the microSD card main directory. No **.txt** only SSH
 
 ![pi5](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/5.PNG)
 
