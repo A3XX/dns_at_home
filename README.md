@@ -50,6 +50,13 @@
 sudo raspi-config
 ```
 
+ - a. Select 8 and enter this will update the raspi-config tool. 
+ - b. Select 1 and enter, chnage the default password. 
+ - c. run the following command on terminal
+      ```bash 
+        sudo apt update && sudo apt full-upgrade && sudo apt autoremove && sudo apt autoclean
+       ```
+
 
 
 
