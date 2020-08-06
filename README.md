@@ -29,7 +29,7 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
   - b. Check your router's DHCP lease page, you will need login/password for the router. 
   - c. Connect your Raspberry Pi to TV via HDMI, attached keyboard,use defaultusername:**pi** and password:**raspberry** and type**ifconfig** and enter.
 3. Once you have the IP address 
-  -a. On Windows pc open Putty and enter the IP address and oepn.a prompt will open click yes, default login as **pi** and  password **raspberry** and enter.
+  -a. On Windows pc open Putty and enter the IP address and clock oepn, a prompt will open click yes, default login as **pi** and  password **raspberry** and enter.
       ![pic7](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/7.PNG)
   -b. On Mac or Linux pc open terminal and connect ssh connection, replace IP address with your Raspberry Pi's IP addess.
      ```bash
