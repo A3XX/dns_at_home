@@ -30,17 +30,18 @@
 
 8. Safely remove the microSD card, put thecard into your Raspberry Pi. 
 
-## Step 2:Connect Raspberry Pito your Home network
+## Step 2:Connect Raspberry Pi to your Home network
 1. Connect Ethernet cable and power adapter, there is no ON/OFF switch it will automatically power on.  
 
-![step2p1](https://projects-static.raspberrypi.org/projects/raspberry-pi-getting-started/0e07cfe2a142a41e6c97611e94057de6dddde935/en/images/pi-plug-in.gif)
+![step2p1](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/7.PNG)
 
-- 2. Figure out your RPi's IP address, There are several methods
+2. Figure out your RPi's IP address, There are several methods
   - a. pinging the default Raspbian hostname. open command prompt or terminal and type **ping raspberrypi**. You get the IP address. 
   - b. Check your router's DHCP lease page, you will need login/password for the router. 
   - c. Conect your Raspberry Pi to TV via HDMI, attached keyboard, use default username:**pi** and password:**raspberry** and type **ifconfig** and enter
+3. Once you have the IP address, Open Putty and enter the IP address and oepn.a prompt will open click yes.login as **pi** and enter password **raspberry**
 
-
+![step2p1](https://projects-static.raspberrypi.org/projects/raspberry-pi-getting-started/0e07cfe2a142a41e6c97611e94057de6dddde935/en/images/pi-plug-in.gif)
 
 
 
