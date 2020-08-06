@@ -62,7 +62,8 @@ sudo raspi-config
 ```bash 
 sudo nano /etc/dhcpcd.conf
 ```
- - Scroll to the end of the file and change the following lines according to your network setup for a static IP.
+-  Scroll to the end of the file and change the following lines according to your network setup for a static IP.
+  
 ```bash 
 # Example static IP configuration:
 interface eth0
@@ -71,7 +72,8 @@ static ip_address=192.168.1.252/24
 static routers=192.168.1.1
 static domain_name_servers=192.168.1.1
 ```bash 
- - save the changes by pressing ctrl + x keys, then press y and enter. 
+
+- save the changes by pressing ctrl + x keys, then press y and enter. 
 
 
 
