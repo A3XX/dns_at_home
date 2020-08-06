@@ -32,9 +32,9 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
   -a. On Windows pc open Putty and enter the IP address and oepn.a prompt will open click yes, default login as **pi** and  password **raspberry** and enter.
       ![pic7](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/7.PNG)
   -b. On Mac or Linux pc open terminal and type the command like. 
-       ```bash
-       ssh pi@192.168.1.252
-       ```
+     ```bash
+     sudo raspi-config
+     ```
 4. We will do most of our configurations using a handy tool called “raspi-config”.
      ```bash
      sudo raspi-config
