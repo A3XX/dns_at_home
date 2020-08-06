@@ -20,7 +20,7 @@
 
 ![pi3](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/3.PNG)
 
-6. confirm and contiue. 
+6. Confirm and contiue. 
 
 ![pi4](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/4.PNG)
 
@@ -28,7 +28,7 @@
 
 ![pi5](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/5.PNG)
 
-8. safely remove the microSD card, put thecard into your Raspberry Pi. 
+8. Safely remove the microSD card, put thecard into your Raspberry Pi. 
 
 ### Step 2:
 
