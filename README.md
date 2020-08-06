@@ -67,9 +67,9 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
 ## Step 3:Installing Pi-Hole
 
 After the above configurations have been done, it is now time to actually install the Pi-hole software. The installation process is rather simple. All you have to do is to execute the following command to download the Pi-hole installation script and start the installation procedure.
-    ```bash 
-    curl -sSL https://install.pi-hole.net | bash
-    ```
+```bash 
+curl -sSL https://install.pi-hole.net | bash
+```
 Follow the prompts to complete setup. However make sure to save the password from last screen. We need this to log into Pi-hole's web interface. 
     ![pic8](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/8.gif)
 Let's change the Pi-hole's default password to something that you can remember. Ignore this step if you don't want to change default password. 
