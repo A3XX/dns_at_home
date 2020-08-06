@@ -103,7 +103,7 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
              - https://1.1.1.1/dns-query
              - https://1.0.0.1/dns-query
            ```
-     - ##### b. if you want to Block Malware
+     - ##### b. Block Malware
           ```bash
           proxy-dns: true
           proxy-dns-port: 5053
@@ -142,7 +142,9 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
 ## Step 5:Chnage DNS on your router
 Everyone has different router at home so you will need to consult manual of router to change the DNS server. [This link](https://www.lifewire.com/how-to-change-dns-servers-on-most-popular-routers-2617995) has information on most of the widely routers on how to change the DNS. 
 
-### Manually Update DNS on iPhone 
+If you do not want to change the DNS on the router, you can change the DNS server on devices manually. 
+
+#### Manually Update DNS on iPhone 
 How to change DNS settings on iPhone, iPad, or iPod touch:
 1. On your iOS device, open Settings.
 2. Tap Wi-Fi.
@@ -150,11 +152,11 @@ How to change DNS settings on iPhone, iPad, or iPod touch:
 4. Tap DNS.
 5. Now remove the existing DNS servers and enter the IP address of raspberry PI.
 
-### Manually Update DNS on Windows
+#### Manually Update DNS on Windows
 
 Please follow this [guide](https://www.quad9.net/microsoft/) and only enter the IP address of raspberry PI.
 
-### Manually Update DNS on Windows
+#### Manually Update DNS on Mac
 
 Please follow this [guide](https://www.quad9.net/apple/) and only enter the IP address of raspberry PI.
 
