@@ -1,28 +1,23 @@
-
+## Pi-Hole + DoH (DNS over https)
+In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https) to encrypted DNS queries. 
+![pi0](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/0.PNG)
+ 
 
 ## Step 1: Get the Raspberry Pi OS onto microSD card
 
 1. Download Raspberry Pi Imager from [https://www.raspberrypi.org/downloads/](https://www.raspberrypi.org/downloads/)
-2. install and launch Raspberry Pi Imager 
+2. install and launch Raspberry Pi Imager. 
     ![pi1](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/1.PNG)
-3. Click on choose OS and select Raspberry Pi OS 32bit
+3. Click on choose OS and select Raspberry Pi OS 32bit.
     ![pi1a](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/1a.png)
-4. Select the micro SD card 
-
-![pi2](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/2.PNG)
-
+4. Select the micro SD card.
+    ![pi2](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/2.PNG)
 5. Make sure you have selected the correct drive, click Yes.
-
-![pi3](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/3.PNG)
-
+    ![pi3](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/3.PNG)
 6. Confirm and continue. 
-
-![pi4](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/4.PNG)
-
-7. Once completed disconnect the microSD card and reconnect. create a blank **SSH** wihout any extension on the microSD card main directory. No **.txt** only SSH
-
-![pi5](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/5.PNG)
-
+    ![pi4](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/4.PNG)
+7. Once completed disconnect the microSD card and reconnect. create a blank **SSH** file wihout any extension on the microSD card on main directory. Make sure extension is not **.txt**,filename should be **SSH** not ssh.txt.
+    ![pi5](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/5.PNG)
 8. Safely remove the microSD card, insert the card into your Raspberry Pi. 
 
 ## Step 2: Connect Raspberry Pi to your Home network
