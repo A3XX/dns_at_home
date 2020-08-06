@@ -103,14 +103,14 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
        - https://1.1.1.1/dns-query
        - https://1.0.0.1/dns-query
      ```
-     #### b. if you want to Block Malware
+     - ##### b. if you want to Block Malware
      ```bash
      proxy-dns: true
      proxy-dns-port: 5053
      proxy-dns-upstream:
        - https://security.cloudflare-dns.com/dns-query
      ```
-     #### c. Block Malware and Adult Content
+     - ##### c. Block Malware and Adult Content
      ```bash
      proxy-dns: true
      proxy-dns-port: 5053
@@ -132,11 +132,10 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
     dig @127.0.0.1 -p 5053 google.com
     ```
     
-### Configuring Pi-hole
-Finally, configure Pi-hole to use the local cloudflared service as the upstream DNS server by specifying 127.0.0.1#5053 as the Custom DNS (IPv4):
-Make sure all other Upstream DNS Servers are unchecked **don't forget to hit Return or click on Save**
-
-![pic10](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/10.PNG)
+7. **Configuring Pi-hole**
+     - Finally, configure Pi-hole to use the local cloudflared service as the upstream DNS server by specifying 127.0.0.1#5053 as the Custom DNS (IPv4):
+     - Make sure all other Upstream DNS Servers are unchecked **don't forget to click on Save**
+      ![pic10](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/10.PNG)
 
 
 
