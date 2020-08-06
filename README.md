@@ -37,6 +37,8 @@
 
 2. Figure out your RPi's IP address, There are several methods
   - a. pinging the default Raspbian hostname. open command prompt or terminal and type **ping raspberrypi**. You get the IP address.
+    [pic6](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/6.PNG)
+
   - b. Check your router's DHCP lease page, you will need login/password for the router. 
   - c. Conect your Raspberry Pi to TV via HDMI, attached keyboard, use default username:**pi** and password:**raspberry** and type **ifconfig** and enter
 3. Once you have the IP address, Open Putty and enter the IP address and oepn.a prompt will open click yes.login as **pi** and enter password **raspberry**
