@@ -56,13 +56,13 @@ sudo raspi-config
 ```bash 
         sudo apt update && sudo apt full-upgrade && sudo apt autoremove && sudo apt autoclean
 ```
-  -d. Assign a static IP address, check free IP via pining or DHCP lease on the router. for demo I am assigning 192.168.1.252
+ - d. Assign a static IP address, check free IP via pining or DHCP lease on the router. for demo I am assigning 192.168.1.252
   
 
 ```bash 
 sudo nano /etc/dhcpcd.conf
 ```
--  Scroll to the end of the file and change the following lines according to your network setup for a static IP.
+ - e. Scroll to the end of the file and change the following lines according to your network setup for a static IP.
   
 ```bash 
   # Example static IP configuration:
@@ -73,7 +73,9 @@ sudo nano /etc/dhcpcd.conf
   static domain_name_servers=192.168.1.1
 ```bash 
 
-- save the changes by pressing ctrl + x keys, then press y and enter. 
+- f.  save the changes by pressing ctrl + x keys, then press y and enter. then enter *sudo reboot*
+
+- g. Open a new SSH connection using static IP we just assigned.
 
 
 
