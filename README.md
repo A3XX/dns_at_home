@@ -64,7 +64,7 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
     ```
 - g. Open a new SSH connection using new static IP we just assigned.
 
-## Step 3:Installing Pi-Hole
+## Step 3: Installing Pi-Hole
 
 1. After the above configurations have been done, it is now time to actually install the Pi-hole software. The installation process is rather simple. All you have to do is to execute the following command to download the Pi-hole installation script and start the installation procedure.
     ```bash 
@@ -80,62 +80,58 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
     ![pic9](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/9.PNG)
 
 ## Step 4: Installing cloudflared
-Here we are downloading the precompiled binary and copying it to the /usr/local/bin/ directory to allow execution by the cloudflared user. Proceed to run the binary with the -v flag to check it is all working:
+1. Here we are downloading the precompiled binary and copying it to the /usr/local/bin/ directory to allow execution by the cloudflared user. Proceed to run the binary with the -v flag to check it is working.
+    ```bash 
+    wget https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-linux-arm.tgz
+    tar -xvzf cloudflared-stable-linux-arm.tgz
+    sudo cp ./cloudflared /usr/local/bin
+    sudo chmod +x /usr/local/bin/cloudflared
+    cloudflared -v
+    ```
+2. Configuring cloudflared to run on startup. proceed to create a configuration file for cloudflared in /etc/cloudflared named config.yml:
+    ```bash
+    sudo mkdir /etc/cloudflared/
+    sudo nano /etc/cloudflared/config.yml
+   ```
+3. Selcct and Copy 1 of the 3 configuration options. 
 
-```bash 
-wget https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-linux-arm.tgz
-tar -xvzf cloudflared-stable-linux-arm.tgz
-sudo cp ./cloudflared /usr/local/bin
-sudo chmod +x /usr/local/bin/cloudflared
-cloudflared -v
-
-```
-
-Configuring cloudflared to run on startup. proceed to create a configuration file for cloudflared in /etc/cloudflared named config.yml:
-```bash
-sudo mkdir /etc/cloudflared/
-sudo nano /etc/cloudflared/config.yml
-```
-### Copy 1 of the following configurations. 
-
-##### Unfiltered DNS
-```bash
-proxy-dns: true
-proxy-dns-port: 5053
-proxy-dns-upstream:
-  - https://1.1.1.1/dns-query
-  - https://1.0.0.1/dns-query
-```
-#### if you want to Block Malware
-```bash
-proxy-dns: true
-proxy-dns-port: 5053
-proxy-dns-upstream:
-  - https://security.cloudflare-dns.com/dns-query
-```
-#### Block Malware and Adult Content
-```bash
-proxy-dns: true
-proxy-dns-port: 5053
-proxy-dns-upstream:
-  - https://family.cloudflare-dns.com/dns-query
-```
-
-Now install the service via cloudflared's service command:
-```bash
-sudo cloudflared service install
-```
-Start the systemd service and check its status:
-```bash
-sudo systemctl start cloudflared
-sudo systemctl status cloudflared
-sudo cloudflared service install
-```
-Now test that it is working! Run the following dig command
-```bash
-dig @127.0.0.1 -p 5053 google.com
-
-```
+     ##### a. Unfiltered DNS
+     ```bash
+     proxy-dns: true
+     proxy-dns-port: 5053
+     proxy-dns-upstream:
+       - https://1.1.1.1/dns-query
+       - https://1.0.0.1/dns-query
+     ```
+     #### b. if you want to Block Malware
+     ```bash
+     proxy-dns: true
+     proxy-dns-port: 5053
+     proxy-dns-upstream:
+       - https://security.cloudflare-dns.com/dns-query
+     ```
+     #### c. Block Malware and Adult Content
+     ```bash
+     proxy-dns: true
+     proxy-dns-port: 5053
+     proxy-dns-upstream:
+       - https://family.cloudflare-dns.com/dns-query
+     ```
+4. Now install the service via cloudflared's service command.
+    ```bash
+    sudo cloudflared service install
+    ```
+5. Start the systemd service and check its status:
+    ```bash
+    sudo systemctl start cloudflared
+    sudo systemctl status cloudflared
+    sudo cloudflared service install
+    ```
+6. Now test that it is working! Run the following dig command
+    ```bash
+    dig @127.0.0.1 -p 5053 google.com
+    ```
+    
 ### Configuring Pi-hole
 Finally, configure Pi-hole to use the local cloudflared service as the upstream DNS server by specifying 127.0.0.1#5053 as the Custom DNS (IPv4):
 Make sure all other Upstream DNS Servers are unchecked **don't forget to hit Return or click on Save**
