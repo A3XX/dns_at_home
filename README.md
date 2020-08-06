@@ -86,7 +86,7 @@ curl -sSL https://install.pi-hole.net | bash
 ```
 Follow the prompts to complete setup. However make sure to save the password from last screen. We need this to log into Pi-hole's web interface. 
 
-![pic8](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/9.gif)
+![pic8](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/8.gif
 
 
 
