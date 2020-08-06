@@ -8,11 +8,31 @@
 
 ![pi1](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/1.PNG)
 
-3. Click on 
+3. Click on choose os and select Raspberry Pi OS 32bit
+
+![pi1a](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/1a.PNG)
 
 4. Select the micro SD card 
 
 ![pi2](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/2.PNG)
+
+5. Make sure you have slected the correct drive. click Yes
+
+![pi3](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/3.PNG)
+
+6. confirm and contiue. 
+
+![pi4](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/4.PNG)
+
+7. Once completeed disconect the microSD card and reconnect. create a blank **SSH** wihout any extension. No .txt only SSH.
+
+![pi5](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/5.PNG)
+
+8. safely remove the microSD card, put thecard into your Raspberry Pi. 
+
+### Step 2:
+
+
 
 
 
