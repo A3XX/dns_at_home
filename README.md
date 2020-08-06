@@ -10,7 +10,7 @@
 
 3. Click on choose os and select Raspberry Pi OS 32bit
 
-![pi1a](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/1a.PNG)
+![pi1a](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/1a.png)
 
 4. Select the micro SD card 
 
