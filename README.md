@@ -31,9 +31,9 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
 3. Once you have the IP address 
   -a. On Windows pc open Putty and enter the IP address and oepn.a prompt will open click yes, default login as **pi** and  password **raspberry** and enter.
       ![pic7](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/7.PNG)
-  -b. On Mac or Linux pc open terminal and type the command like 
-      ```bash 
-      ssh pi@192.168.1.252
+  -b. On Mac or Linux pc open terminal and type the command like. 
+       ```bash
+       ssh pi@192.168.1.252
        ```
 4. We will do most of our configurations using a handy tool called “raspi-config”.
      ```bash
@@ -43,11 +43,11 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
  - b. Select 1 and enter, change the default password. 
  - c. Run the following command on terminal
     ```bash 
-        sudo apt update && sudo apt full-upgrade && sudo apt autoremove && sudo apt autoclean   
+     sudo apt update && sudo apt full-upgrade && sudo apt autoremove && sudo apt autoclean   
     ```
  - d. Assign a static IP address, check free IP via pining or DHCP lease on the router. for demo I am assigning 192.168.1.252
     ```bash 
-    sudo nano /etc/dhcpcd.conf
+     sudo nano /etc/dhcpcd.conf
     ```
  - e. Scroll to the end of the file and change the following lines according to your network setup for a static IP.
     ```bash 
@@ -56,11 +56,11 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
      static ip_address=192.168.1.252/24
      #static ip6_address=fd51:42f8:caae:d92e::ff/64
      static routers=192.168.1.1
-    static domain_name_servers=192.168.1.1
+     static domain_name_servers=192.168.1.1
     ``` 
 - f. Save the changes by pressing ctrl + x keys, then press y and enter. then enter 
     ```bash
-    sudo reboot*
+     sudo reboot*
     ```
 - g. Open a new SSH connection using new static IP we just assigned.
 
