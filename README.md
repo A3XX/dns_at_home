@@ -8,7 +8,7 @@
 
 ![pi1](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/1.PNG)
 
-3. Click on choose os and select Raspberry Pi OS 32bit
+3. Click on choose OS and select Raspberry Pi OS 32bit
 
 ![pi1a](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/1a.png)
 
@@ -16,32 +16,32 @@
 
 ![pi2](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/2.PNG)
 
-5. Make sure you have slected the correct drive. click Yes
+5. Make sure you have selected the correct drive, click Yes.
 
 ![pi3](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/3.PNG)
 
-6. Confirm and contiue. 
+6. Confirm and continue. 
 
 ![pi4](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/4.PNG)
 
-7. Once completeed disconect the microSD card and reconnect. create a blank **SSH** wihout any extension on the microSD card main directory. No **.txt** only SSH
+7. Once completed disconnect the microSD card and reconnect. create a blank **SSH** wihout any extension on the microSD card main directory. No **.txt** only SSH
 
 ![pi5](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/5.PNG)
 
-8. Safely remove the microSD card, put thecard into your Raspberry Pi. 
+8. Safely remove the microSD card, insert the card into your Raspberry Pi. 
 
-## Step 2:Connect Raspberry Pi to your Home network
+## Step 2: Connect Raspberry Pi to your Home network
 1. Connect Ethernet cable and power adapter, there is no ON/OFF switch it will automatically power on.  
 
 ![step2p1](https://projects-static.raspberrypi.org/projects/raspberry-pi-getting-started/0e07cfe2a142a41e6c97611e94057de6dddde935/en/images/pi-plug-in.gif)
 
-2. Figure out your RPi's IP address, There are several methods
+2. Figure out your RPi's IP address, there are several methods.
   - a. pinging the default Raspbian hostname. open command prompt or terminal and type **ping raspberrypi**. You get the IP address.
     ![pic6](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/6.PNG)
 
   - b. Check your router's DHCP lease page, you will need login/password for the router. 
-  - c. Conect your Raspberry Pi to TV via HDMI, attached keyboard, use default username:**pi** and password:**raspberry** and type **ifconfig** and enter
-3. Once you have the IP address, Open Putty and enter the IP address and oepn.a prompt will open click yes.login as **pi** and enter password **raspberry**
+  - c. Connect your Raspberry Pi to TV via HDMI, attached keyboard, use default username:**pi** and password:**raspberry** and type **ifconfig** and enter
+3. Once you have the IP address, Open Putty and enter the IP address and oepn.a prompt will open click yes, default login as **pi** and  password **raspberry** and enter.
 
 ![pic7](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/7.PNG)
 
@@ -51,7 +51,7 @@ sudo raspi-config
 ```
 
  - a. Select 8 and enter this will update the raspi-config tool. 
- - b. Select 1 and enter, chnage the default password. 
+ - b. Select 1 and enter, change the default password. 
  - c. run the following command on terminal
 ```bash 
         sudo apt update && sudo apt full-upgrade && sudo apt autoremove && sudo apt autoclean
@@ -88,7 +88,7 @@ Follow the prompts to complete setup. However make sure to save the password fro
 
 ![pic8](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/8.gif)
 
-Let's change the Pi-hole's default password to something that we can remember.Ignore this step if you don't want to use it. 
+Let's change the Pi-hole's default password to something that you can remember. Ignore this step if you don't want to change default password. 
 
 ```bash 
 pihole -a -p
@@ -99,7 +99,7 @@ Open browser and enter the following in browser http://YOUR_IP_ADDRESS/admin/ an
 ![pic9](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/9.PNG)
 
 
-## Step 4:Installing cloudflared
+## Step 4: Installing cloudflared
 Here we are downloading the precompiled binary and copying it to the /usr/local/bin/ directory to allow execution by the cloudflared user. Proceed to run the binary with the -v flag to check it is all working:
 
 ```bash 
@@ -111,12 +111,12 @@ cloudflared -v
 
 ```
 
-Configuring cloudflared to run on startup. roceed to create a configuration file for cloudflared in /etc/cloudflared named config.yml:
+Configuring cloudflared to run on startup. proceed to create a configuration file for cloudflared in /etc/cloudflared named config.yml:
 ```bash
 sudo mkdir /etc/cloudflared/
 sudo nano /etc/cloudflared/config.yml
 ```
-### Copy the 1 of the following configuration 
+### Copy 1 of the following configurations. 
 
 ##### Unfiltered DNS
 ```bash
@@ -182,8 +182,6 @@ Please follow this [guide](https://www.quad9.net/microsoft/) and only enter the 
 ### Manually Update DNS on Windows
 
 Please follow this [guide](https://www.quad9.net/apple/) and only enter the IP address of raspberry PI.
-
-
 
 
 
