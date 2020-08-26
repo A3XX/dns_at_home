@@ -60,7 +60,7 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
     ``` 
 - f. Save the changes by pressing ctrl + x keys, then press y and enter. then enter 
     ```bash
-     sudo reboot*
+     sudo reboot
     ```
 - g. Open a new SSH connection using new static IP we just assigned.
 
