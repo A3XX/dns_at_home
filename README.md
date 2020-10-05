@@ -125,7 +125,6 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
     ```bash
     sudo systemctl start cloudflared
     sudo systemctl status cloudflared
-    sudo cloudflared service install
     ```
 6. Now test that it is working! Run the following dig command
     ```bash
