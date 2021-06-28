@@ -143,7 +143,7 @@ Default config will update at 3:00am every day. To setup the automatic updates r
  ```bash 
  curl -sSL https://git.io/Jctzj | bash
  ```
-If you want to change crontab update time please visit[this link](https://crontab-generator.org/)
+If you want to change automatic updates schedule please visit [this link](https://crontab-generator.org/)
 
 ## Step 6: Chnage DNS on your router
 Everyone has different router at home so you will need to consult manual of router to change the DNS server. [This link](https://www.lifewire.com/how-to-change-dns-servers-on-most-popular-routers-2617995) has information on most of the widely routers on how to change the DNS. 
