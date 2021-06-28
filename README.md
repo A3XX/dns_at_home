@@ -43,7 +43,7 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
  - b. Select 1 and enter, change the default password. 
  - c. Run the following command on terminal
     ```bash 
-     sudo apt update && sudo apt full-upgrade && sudo apt autoremove && sudo apt autoclean   
+     sudo apt update && sudo apt -y full-upgrade && sudo apt -y autoremove && sudo apt -y autoclean && sudo apt install -y rpi-eeprom
     ```
  - d. Assign a static IP address, check free IP via pining or DHCP lease on the router. for demo I am assigning 192.168.1.252
     ```bash 
