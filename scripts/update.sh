@@ -20,5 +20,5 @@ sleep 1s
 sudo reboot" > /home/pi/update.sh	
 # make script executable 
 chmod +x update.sh
-#create crontab to run update script everyday at 3:00 AM
+#create crontab entry to run update script everyday at 3:00 AM
 crontab -l | { cat; echo "* 3 * * * /home/pi/update.sh >/dev/null 2>&1"; } | crontab -
