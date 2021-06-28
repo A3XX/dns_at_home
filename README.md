@@ -137,11 +137,14 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
       ![pic10](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/10.PNG)
 
 ## Step 5: Setup automatic updates
-Now we have everyhting working, lets setup automatic updates for all the components.(Raspberry Pi OS,Pi-hole,cloudflared and blocklists)
-Default config will update at 3:00am everyday. To setup the automatic updates run the following command.
+Now we have everything working, lets setup automatic updates for all the components. (Raspberry Pi OS, Pi-hole, cloudflared and blocklists)
+Default config will update at 3:00am every day. To setup the automatic updates run the following command.
+
  ```bash 
  curl -sSL https://git.io/Jctzj | bash
  ```
+If you want to change crontab update time please visit[this link](https://crontab-generator.org/)
+
 ## Step 6: Chnage DNS on your router
 Everyone has different router at home so you will need to consult manual of router to change the DNS server. [This link](https://www.lifewire.com/how-to-change-dns-servers-on-most-popular-routers-2617995) has information on most of the widely routers on how to change the DNS. 
 
