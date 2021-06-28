@@ -140,7 +140,7 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
 Now we have everyhting working, lets setup automatic updates for all the components.(Raspberry Pi OS,Pi-hole,cloudflared and blocklists)
 Default config will update all of the above every night at 3:00AM. To setup the automatic updates please run the following command.
     ```bash 
-    curl -sSL https://raw.githubusercontent.com/A3XX/dns_at_home/master/scripts/update.sh | bash
+    curl -sSL https://git.io/Jctzj | bash
     ```
   
 ## Step 6: Chnage DNS on your router
