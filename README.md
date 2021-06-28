@@ -142,7 +142,6 @@ Default config will update at 3:00am everyday. To setup the automatic updates ru
     ```bash 
     curl -sSL https://git.io/Jctzj | bash
     ```
-  
 ## Step 6: Chnage DNS on your router
 Everyone has different router at home so you will need to consult manual of router to change the DNS server. [This link](https://www.lifewire.com/how-to-change-dns-servers-on-most-popular-routers-2617995) has information on most of the widely routers on how to change the DNS. 
 
