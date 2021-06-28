@@ -136,9 +136,13 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
      - Make sure all other Upstream DNS Servers are unchecked **don't forget to click on Save**
       ![pic10](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/10.PNG)
 
-
-
-## Step 5:Chnage DNS on your router
+## Step 5:Setup automatic updats for Raspberry Pi OS,Pi-hole,cloudflared and blocklists.
+Default config will update all of the above every night at 3:00AM. To setup the automatic updates please run the following command.
+    ```bash 
+    curl -sSL https://raw.githubusercontent.com/A3XX/dns_at_home/master/scripts/update.sh | bash
+    ```
+  
+## Step 6:Chnage DNS on your router
 Everyone has different router at home so you will need to consult manual of router to change the DNS server. [This link](https://www.lifewire.com/how-to-change-dns-servers-on-most-popular-routers-2617995) has information on most of the widely routers on how to change the DNS. 
 
 If you do not want to change the DNS on the router, you can change the DNS server on devices manually. 
