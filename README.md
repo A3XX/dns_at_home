@@ -122,3 +122,7 @@ Please follow this [guide](https://www.quad9.net/microsoft/) and only enter the 
 #### Manually Update DNS on Mac
 
 Please follow this [guide](https://www.quad9.net/apple/) and only enter the IP address of raspberry PI.
+
+## Optional: Pi-hole Remote (A Remote app for Pi-hole)
+If you are using iPhone you can optionally download [Pi-hole Remote](https://apps.apple.com/us/app/pi-hole-remote/id1515445551#?platform=iphone) to manage Pi-hole from your iPhone.
+Unfortunately, this app is not available for Android.  
