@@ -6,7 +6,7 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
 ## Step 1: Get the Raspberry Pi OS onto microSD card
 
 1. Download Raspberry Pi Imager from [https://www.raspberrypi.org/downloads/](https://www.raspberrypi.org/downloads/)
-2. install and launch Raspberry Pi Imager. 
+2. Install and launch Raspberry Pi Imager. 
     ![pi1](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/1.PNG)
 3. Click on choose OS and select Raspberry Pi OS 32bit.
     ![pi1a](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/1a.png)
@@ -27,9 +27,9 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
   - a. Pinging the default Raspbian hostname. open command prompt or terminal and type **ping raspberrypi**. You get the IP address. (Picture shows IPv6)
       ![pic6](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/6.PNG)
   - b. Check your router's DHCP lease page, you will need login/password for the router. 
-  - c. Connect your Raspberry Pi to TV via HDMI, attached keyboard,use defaultusername:**pi** and password:**raspberry** and type**ifconfig** and enter.
-3. Once you have the IP address 
-  -a. On Windows pc open Putty and enter the IP address and clock oepn, a prompt will open click yes, default login as **pi** and  password **raspberry** and enter.
+  - c. Connect your Raspberry Pi to TV via HDMI, attached keyboard,use default username:**pi** and password:**raspberry** and type **ifconfig** and enter.
+3. Once you have the IP address
+  -a. On Windows PC open Putty and enter the IP address and click oepn, also click yes on the next prompt, default username as **pi** and  password **raspberry** and enter.
       ![pic7](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/7.PNG)
   -b. On Mac or Linux pc open terminal and connect ssh connection, replace IP address with your Raspberry Pi's IP addess.
      ```bash
