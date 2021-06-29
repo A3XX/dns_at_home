@@ -90,7 +90,7 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
     ```
 3. **Configuring Pi-hole**
      - Finally, configure Pi-hole to use the local cloudflared service as the upstream DNS server (Settings -> DNS) by specifying 127.0.0.1#5053 as the Custom DNS (IPv4).
-     - Make sure all other Upstream DNS Servers are unchecked and **don't forget to click on Save**
+     - Make sure all other Upstream DNS Servers are **unchecked** and **don't forget to click on Save**
       ![pic10](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/10.PNG)
 
 ## Step 5: Setup automatic updates
