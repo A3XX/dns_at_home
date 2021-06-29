@@ -76,7 +76,7 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
     ```bash 
     pihole -a -p
     ```
-4. Open browser and enter **http://IP_ADDRESS/admin/** and enter the password.(Make sure to enter the IP we assigned in 4.e) 
+4. Open browser and enter **http://IP_ADDRESS/admin/** and enter the password.
     ![pic9](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/9.PNG)
 
 ## Step 4: Installing cloudflared
