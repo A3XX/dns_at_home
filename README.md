@@ -45,7 +45,7 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
     ```bash 
      sudo apt update && sudo apt -y full-upgrade && sudo apt -y autoremove && sudo apt -y autoclean && sudo apt install -y rpi-eeprom
     ```
- - d. Assign a static IP address, check free IP via pining or DHCP lease on the router. for demo I am assigning 192.168.1.252
+ - d. Assign a static IP address, check free IP via pinging or DHCP lease on the router. for the demo I am assigning 192.168.1.252
     ```bash 
      sudo nano /etc/dhcpcd.conf
     ```
@@ -66,7 +66,7 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
 
 ## Step 3: Installing Pi-Hole
 
-1. After the above configurations have been done, it is now time to actually install the Pi-hole software. The installation process is rather simple. All you have to do is to execute the following command to download the Pi-hole installation script and start the installation procedure.
+1. After the above configurations have been done, it is now time to install the Pi-hole software. The installation process is rather simple. All you have to do is to execute the following command to download the Pi-hole installation script and start the installation procedure.
     ```bash 
     curl -sSL https://install.pi-hole.net | bash
     ```
@@ -76,20 +76,20 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
     ```bash 
     pihole -a -p
     ```
-4. Open browser and enter the following in browser http://RPI_IP_ADDRESS/admin/ and enter the password. 
+4. Open browser and enter **http://IP_ADDRESS/admin/** and enter the password.(Make sure to enter the IP we assigned in 4.e) 
     ![pic9](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/9.PNG)
 
 ## Step 4: Installing cloudflared
-1. TO install and configure cloudflared run the following command.
+1. To install and configure cloudflared run the following command.
     ```bash 
     wget https://git.io/JctAF -O install-cloudflared.sh && bash install-cloudflared.sh
     ```
-2. Now verify that cloudflared is working! Run the following dig command
+2. Now verify that cloudflared is working! (query a few domains)
     ```bash
     dig @127.0.0.1 -p 5053 twitter.com
     ```
 3. **Configuring Pi-hole**
-     - Finally, configure Pi-hole to use the local cloudflared service as the upstream DNS server (Settings -> DNS) by specifying 127.0.0.1#5053 as the Custom DNS (IPv4).
+     - Finally, configure Pi-hole to use the local cloudflared service as the upstream DNS server (Settings -> DNS) by specifying **127.0.0.1#5053** as the **Custom DNS (IPv4)**.
      - Make sure all other Upstream DNS Servers are **unchecked** and **don't forget to click on Save**
       ![pic10](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/10.PNG)
 
@@ -100,7 +100,7 @@ Default config will update at 3:00am every day. To setup the automatic updates r
  ```bash 
  curl -sSL https://git.io/Jctzj | bash
  ```
-If you want to change automatic updates schedule please visit [this link](https://crontab-generator.org/). 
+If you want to change automatic updates schedule please visit [this link](https://crontab-generator.org/) to learn about cron job. 
 
 ## Step 6: Chnage DNS on your router
 Everyone has different router at home so you will need to consult manual of router to change the DNS server. [This link](https://www.lifewire.com/how-to-change-dns-servers-on-most-popular-routers-2617995) has information on most of the widely routers on how to change the DNS. 
