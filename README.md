@@ -1,6 +1,7 @@
 ## Pi-Hole + DoH (DNS over https)
-In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https) to encrypted DNS queries. 
+In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https) to encrypt DNS queries. 
 ![pi0](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/0.PNG)
+ 
  
 
 ## Step 1: Get the Raspberry Pi OS onto microSD card
@@ -19,6 +20,7 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
 7. Once completed disconnect the microSD card and reconnect. create a blank **SSH** file wihout any extension on the microSD card on main directory. Make sure extension is not **.txt**,filename should be **SSH** not ssh.txt.
     ![pi5](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/5.PNG)
 8. Safely remove the microSD card, insert the card into your Raspberry Pi. 
+
 
 ## Step 2: Connect Raspberry Pi to your Home network
 1. Connect Ethernet cable and power adapter, there is no ON/OFF switch it will automatically power on.  
@@ -64,6 +66,7 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
     ```
 - g. Open a new SSH connection using new static IP we just assigned.
 
+
 ## Step 3: Installing Pi-Hole
 
 1. After the above configurations have been done, it is now time to actually install the Pi-hole software. The installation process is rather simple. All you have to do is to execute the following command to download the Pi-hole installation script and start the installation procedure.
@@ -79,6 +82,7 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
 4. Open browser and enter the following in browser http://RPI_IP_ADDRESS/admin/ and enter the password. 
     ![pic9](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/9.PNG)
 
+
 ## Step 4: Installing cloudflared
 1. TO install and configure cloudflared run the following command.
     ```bash 
@@ -93,6 +97,7 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
      - Make sure all other Upstream DNS Servers are **unchecked** and **don't forget to click on Save**
       ![pic10](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/10.PNG)
 
+
 ## Step 5: Setup automatic updates
 Now we have everything working, lets setup automatic updates for all the components. (Raspberry Pi OS, Pi-hole, cloudflared and blocklists)
 Default config will update at 3:00am every day. To setup the automatic updates run the following command.
@@ -101,6 +106,7 @@ Default config will update at 3:00am every day. To setup the automatic updates r
  curl -sSL https://git.io/Jctzj | bash
  ```
 If you want to change automatic updates schedule please visit [this link](https://crontab-generator.org/). 
+
 
 ## Step 6: Chnage DNS on your router
 Everyone has different router at home so you will need to consult manual of router to change the DNS server. [This link](https://www.lifewire.com/how-to-change-dns-servers-on-most-popular-routers-2617995) has information on most of the widely routers on how to change the DNS. 
