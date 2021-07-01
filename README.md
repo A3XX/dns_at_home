@@ -41,15 +41,16 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
      ```
  - a. Select 8 and enter, this will update the raspi-config tool. 
  - b. Select 1 and enter, change the default password. 
- - c. Run the following command on terminal
+ - c. Seelct 5 Localisation Option -> L2 TimeZone.
+ - d. Run the following command on terminal
     ```bash 
      sudo apt update && sudo apt -y full-upgrade && sudo apt -y autoremove && sudo apt -y autoclean && sudo apt install -y rpi-eeprom
     ```
- - d. Assign a static IP address, check free IP via pinging or DHCP lease on the router. for the demo I am assigning 192.168.1.252
+ - e. Assign a static IP address, check free IP via pinging or DHCP lease on the router. for the demo I am assigning 192.168.1.252
     ```bash 
      sudo nano /etc/dhcpcd.conf
     ```
- - e. Scroll to the end of the file and change the following lines according to your network setup for a static IP.
+ - f. Scroll to the end of the file and change the following lines according to your network setup for a static IP.
     ```bash 
      # Example static IP configuration:
      interface eth0
@@ -58,11 +59,11 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
      static routers=192.168.1.1
      static domain_name_servers=192.168.1.1
     ``` 
-- f. Save the changes by pressing ctrl + x keys, then press y and enter. then enter 
+- g. Save the changes by pressing ctrl + x keys, then press y and enter. then enter 
     ```bash
      sudo reboot
     ```
-- g. Open a new SSH connection using new static IP we just assigned.
+- h. Open a new SSH connection using new static IP we just assigned.
 
 ## Step 3: Installing Pi-Hole
 
