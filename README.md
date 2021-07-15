@@ -103,7 +103,7 @@ Default config will update at 3:00am every day. To setup the automatic updates r
  ```
 If you want to change automatic updates schedule please visit [this link](https://crontab-generator.org/) to learn about cron job. 
 
-## Step 6: Chnage DNS on your router
+## Step 6: Change DNS on your router
 Everyone has different router at home so you will need to consult manual of router to change the DNS server. [This link](https://www.lifewire.com/how-to-change-dns-servers-on-most-popular-routers-2617995) has information on most of the widely routers on how to change the DNS. 
 
 If you do not want to change the DNS on the router, you can change the DNS server on devices manually. 
