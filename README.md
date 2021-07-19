@@ -57,7 +57,7 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
      static ip_address=192.168.1.252/24
      #static ip6_address=fd51:42f8:caae:d92e::ff/64
      static routers=192.168.1.1
-     static domain_name_servers=192.168.1.1
+     static domain_name_servers=1.1.1.1
     ``` 
 - g. Save the changes by pressing ctrl + x keys, then press y and enter. then enter 
     ```bash
