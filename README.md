@@ -23,7 +23,7 @@ In this guide we’ll install Pi-Hole on Raspberry Pi and use DoH(DNS over https
 ## Step 2: Connect Raspberry Pi to your Home network
 1. Connect Ethernet cable and power adapter, there is no ON/OFF switch it will automatically power on.  
     ![step2p1](https://projects-static.raspberrypi.org/projects/raspberry-pi-getting-started/0e07cfe2a142a41e6c97611e94057de6dddde935/en/images/pi-plug-in.gif)
-2. Figure out your RPi's IP address, there are several methods.
+2. Figure out your RPi's IP address, there are several methods, you can use one of the following and skip others.
   - a. Pinging the default Raspbian hostname. open command prompt or terminal and type **ping raspberrypi**. You get the IP address. (Picture shows IPv6)
       ![pic6](https://raw.githubusercontent.com/A3XX/dns_at_home/master/img/6.PNG)
   - b. Check your router's DHCP lease page, you will need login/password for the router. 
