@@ -1,7 +1,7 @@
 #!/bin/bash
 cd /home/pi
 #Download Cloudflared
-wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm# Extract cloudflared
+wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm
 sudo cp ./cloudflared-linux-arm /usr/local/bin/cloudflared
 sudo chmod +x /usr/local/bin/cloudflared
 cloudflared -v
