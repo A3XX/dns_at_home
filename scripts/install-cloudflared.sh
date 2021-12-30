@@ -1,11 +1,10 @@
 #!/bin/bash
 cd /home/pi
 #Download Cloudflared
-wget https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-linux-arm.tgz
-# Extract cloudflared
-tar -xvzf cloudflared-stable-linux-arm.tgz
-sudo cp ./cloudflared /usr/local/bin
+wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm# Extract cloudflared
+sudo cp ./cloudflared-linux-arm /usr/local/bin/cloudflared
 sudo chmod +x /usr/local/bin/cloudflared
+cloudflared -v
 sudo mkdir /etc/cloudflared/
 sudo touch /etc/cloudflared/config.yml
 #Delete temp files 
